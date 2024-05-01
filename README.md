@@ -1,22 +1,33 @@
 # API de Consultores Juntos Somos Mais
 
-Um parágrafo da descrição do projeto vai aqui
+Projeto de desenvolvimento de API para a vaga de Engenheiro de Software Pl. Juntos Somos Mais. A descrição do problema e os requisitos estão no [repositório](https://github.com/juntossomosmais/code-challenge).
 
-## 🚀 Começando
+## Index
 
-Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
+- [Pré-requisitos](#Pré-requisitos)
+- [Começando](#Começando)
+- [Instalação](#Instalação)
+- [Testes](#Testes)
+- [API](#API)
+- [Tecnologias](#Tecnologias)
+- [Autor](#Autor)
+- [Referências](#Gratidão)
 
-Consulte **[Implantação](#-implanta%C3%A7%C3%A3o)** para saber como implantar o projeto.
+## Pré-requisitos
 
-### 📋 Pré-requisitos
+- Docker (Docker version 26.0.0, build 2ae903e)
+- Docker Compose (Docker Compose version v2.26.1-desktop.1)
+- Poetry (version 1.8.2) ou virtualenv 20.26.0
 
-De que coisas você precisa para instalar o software e como instalá-lo?
+## Começando
 
+Clone o repositório do projeto:
+```bash
+git clone <AQUI ALTERA PARA REPOSITORIO>
 ```
-Dar exemplos
-```
 
-### 🔧 Instalação
+
+## Instalação
 
 Uma série de exemplos passo-a-passo que informam o que você deve executar para ter um ambiente de desenvolvimento em execução.
 
@@ -34,11 +45,11 @@ Até finalizar
 
 Termine com um exemplo de como obter dados do sistema ou como usá-los para uma pequena demonstração.
 
-## ⚙️ Executando os testes
+## Testes
 
 Explicar como executar os testes automatizados para este sistema.
 
-### 🔩 Analise os testes de ponta a ponta
+## API
 
 Explique que eles verificam esses testes e porquê.
 
@@ -46,19 +57,7 @@ Explique que eles verificam esses testes e porquê.
 Dar exemplos
 ```
 
-### ⌨️ E testes de estilo de codificação
-
-Explique que eles verificam esses testes e porquê.
-
-```
-Dar exemplos
-```
-
-## 📦 Implantação
-
-Adicione notas adicionais sobre como implantar isso em um sistema ativo
-
-## 🛠️ Construído com
+## Tecnologias
 
 Mencione as ferramentas que você usou para criar seu projeto
 
@@ -66,15 +65,7 @@ Mencione as ferramentas que você usou para criar seu projeto
 * [Maven](https://maven.apache.org/) - Gerente de Dependência
 * [ROME](https://rometools.github.io/rome/) - Usada para gerar RSS
 
-## 🖇️ Colaborando
-
-Por favor, leia o [COLABORACAO.md](https://gist.github.com/usuario/linkParaInfoSobreContribuicoes) para obter detalhes sobre o nosso código de conduta e o processo para nos enviar pedidos de solicitação.
-
-## 📌 Versão
-
-Nós usamos [SemVer](http://semver.org/) para controle de versão. Para as versões disponíveis, observe as [tags neste repositório](https://github.com/suas/tags/do/projeto).
-
-## ✒️ Autores
+## Autor
 
 Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
 
@@ -83,16 +74,9 @@ Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
 
 Você também pode ver a lista de todos os [colaboradores](https://github.com/usuario/projeto/colaboradores) que participaram deste projeto.
 
-## 📄 Licença
-
-Este projeto está sob a licença (sua licença) - veja o arquivo [LICENSE.md](https://github.com/usuario/projeto/licenca) para detalhes.
-
-## 🎁 Expressões de gratidão
+## Referências
 
 * Conte a outras pessoas sobre este projeto 📢;
 * Convide alguém da equipe para uma cerveja 🍺;
 * Um agradecimento publicamente 🫂;
 * etc.
-
-
----
