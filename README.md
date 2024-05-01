@@ -162,3 +162,11 @@ Olá, eu sou Alfredo de Morais Neto. Sou desenvolvedor Python e quero fazer part
 - [Medium](https://medium.com/@alfredomorais)
 
 ## Referências
+
+- [FastAPI](https://fastapi.tiangolo.com/)
+- [Pydantic](https://docs.pydantic.dev/latest/concepts/models/)
+- [Fastapi Pagination](https://uriyyo-fastapi-pagination.netlify.app/)
+- [Extensible memoizing collections and decorators](https://cachetools.readthedocs.io/en/latest/)
+- [The Shapely User Manual](https://shapely.readthedocs.io/en/stable/manual.html)
+- [Bounding Box](https://wiki.openstreetmap.org/wiki/Bounding_box)
+- [Basics of Bounding Boxes](https://medium.com/analytics-vidhya/basics-of-bounding-boxes-94e583b5e16c)
