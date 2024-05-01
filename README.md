@@ -141,6 +141,8 @@ Com o Docker, temos um proxy reverso com duas instâncias da aplicação. Aprend
 
 Para acessar a API e a documentação em OpenAPI, acesse: `http://localhost:9999/docs`
 
+![](docs/images/documentation.png)
+
 ## Tecnologias
 
 Para esse projeto, optei por manter a simplicidade da aplicação. Vi que a Juntos Somos Mais utiliza o Django em alguns projetos open source. No entanto, não senti a necessidade de ter um Django com um ORM na aplicação. Por isso, decidi usar o FastAPI por ser simples, async e ter o OpenAPI incluído como padrão.
