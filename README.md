@@ -29,6 +29,8 @@ cd juntos-somos-mais-api/
 
 ## Instalação
 
+OBS: No arquivo [commands](docs/commands.md) da pasta docs, tem uma pequena documentação de todos os comandos que são utilziados o taskipy.
+
 Com o Poetry instalado, execute o seguinte comando:
 
 ```bash
@@ -93,7 +95,7 @@ task run
 
 O primeiro endpoint `root` é um easteregg.
 
-Para acessar a API e a documentação em OpenAPI, acesse: `http://127.0.0.1:8000/docs/`
+Para acessar a API e a documentação em OpenAPI, acesse: **`http://127.0.0.1:8000/docs/`**
 
 Nesta tela, você encontrará todas as informações do endpoint GET para listar consultores.
 
@@ -139,7 +141,7 @@ api1-1   | INFO:     Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to qui
 
 Com o Docker, temos um proxy reverso com duas instâncias da aplicação. Aprendizado do projeto da [Rinha Backend](https://github.com/alfmorais/RinhaBackend2024Q1).
 
-Para acessar a API e a documentação em OpenAPI, acesse: `http://localhost:9999/docs`
+Para acessar a API e a documentação em OpenAPI, acesse: **`http://localhost:9999/docs`**
 
 ![](docs/images/documentation.png)
 
