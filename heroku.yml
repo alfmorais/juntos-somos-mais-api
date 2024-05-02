@@ -1,0 +1,3 @@
+build:
+  docker:
+    juntos-somos-mais-api: Dockerfile

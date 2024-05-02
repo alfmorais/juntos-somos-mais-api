@@ -1,19 +1,12 @@
 services:
   api1: &api
     build: .
-    command: bash -c "uvicorn src.api.app:app --host 0.0.0.0 --port 8080"
+    # command: bash -c "uvicorn src.api.app:app --host 0.0.0.0 --port 8080"
     hostname: api01
     ports:
       - "8081:8080"
     volumes:
       - ./src:/src
-    environment:
-      - DATABASE_URL=postgresql://postgresql:postgresql@123456@db:5432/rinha_backend
-      - DB_USERNAME=postgresql
-      - DB_SECRET=postgresql@123456
-      - DB_HOST=db
-      - DB_PORT=5432
-      - DB_NAME=rinha_backend
     deploy:
       resources:
         limits:
