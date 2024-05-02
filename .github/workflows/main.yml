@@ -1,0 +1,23 @@
+name: Juntos Somos Mais API
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: pip3 install -r requirements.txt
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Build Docker image
+      run: task build-no-cache
+
+    - name: Run tests
+      run: task test
