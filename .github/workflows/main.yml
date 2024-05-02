@@ -10,7 +10,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: pip3 install -r requirements.txt
+    - name: Install Requirements
+      run: pip3 install -r requirements.txt
 
     steps:
     - name: Checkout code
