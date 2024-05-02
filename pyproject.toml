@@ -40,7 +40,9 @@ run = { cmd = "uvicorn src.api.app:app --reload", help = "run project without do
 run-without-cache = { cmd = "docker-compose build --no-cache && docker-compose up", help = "build and run project without cache" }
 run-with-cache = { cmd = "docker-compose up --build", help = "build and run project with docker" }
 test = { cmd = "docker-compose run api1 pytest -vvv --disable-warnings --cov src", help = "running test on docker" }
-build-no-cache = { cmd = "docker-compose build --no-cache", help = "build and run project without cache" }
+build-no-cache = { cmd = "docker-compose --project-name juntos-somos-mais build --no-cache", help = "build and run project without cache" }
+test-pipeline = { cmd = "docker-compose -p juntos-somos-mais-api run api1 pytest -vvv --disable-warnings --cov src", help = "running test on docker" }
+heroku = { cmd = "curl https://cli-assets.heroku.com/install-ubuntu.sh | sh", help = "install heroku Github Actions" }
 
 [build-system]
 requires = ["poetry-core"]
