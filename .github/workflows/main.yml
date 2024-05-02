@@ -10,12 +10,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Install Requirements
-      run: pip3 install -r requirements.txt
-
-    steps:
     - name: Checkout code
       uses: actions/checkout@v2
+
+    - name: Install Requirements
+      run: pip3 install -r requirements.txt
 
     - name: Build Docker image
       run: task build-no-cache
