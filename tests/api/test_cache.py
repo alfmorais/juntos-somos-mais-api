@@ -7,7 +7,7 @@ from src.api.cache import cache
 def test_cache_isinstance_success():
     assert isinstance(cache, TTLCache)
     assert cache.maxsize == 2000
-    assert cache.ttl == 86400
+    assert cache.ttl == float("inf")
 
 
 @patch("src.api.cache.cache")
