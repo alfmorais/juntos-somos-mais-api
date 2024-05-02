@@ -27,4 +27,15 @@ jobs:
       run: task build-no-cache
 
     - name: Run Unit Tests
-      run: task test
+      run: task test-pipeline
+
+    - name: Install Heroku
+      run: task heroku
+
+    - name: Login to Heroku
+      run: heroku container:login
+
+    - name: Build and push Docker image
+      run: |
+        heroku container:push juntos-somos-mais-api -a juntos-somos-mais-api
+        heroku container:release juntos-somos-mais-api -a juntos-somos-mais-api
