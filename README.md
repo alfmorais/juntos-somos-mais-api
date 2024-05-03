@@ -10,6 +10,7 @@ Projeto de desenvolvimento de API para a vaga de Engenheiro de Software Pl. Junt
 - [Testes](#Testes)
 - [API](#API)
 - [Tecnologias](#Tecnologias)
+- [Deploy](#Deploy)
 - [Autor](#Autor)
 - [Referências](#Referências)
 
@@ -153,6 +154,14 @@ Para esse projeto, optei por manter a simplicidade da aplicação. Vi que a Junt
 * [Docker](https://www.docker.com/) - Tecnologia de Conteiners
 * [Poetry](https://python-poetry.org/) - Gerenciador de Dependências
 * [Cache](https://cachetools.readthedocs.io/en/latest/) - Usada para armazenar os dados em memória
+* [GithubActions](https://docs.github.com/pt/actions) - CI/CD
+* [Heroku](https://devcenter.heroku.com/categories/python-support) - Heroku: Cloud Application Platform
+
+## Deploy
+
+Foi realizado o deploy com Heroku. O link para acesso é esse: https://juntos-somos-mais-api-cd10cac8ddc9.herokuapp.com/docs. 
+
+Caso tenha feito outro deploy, pode ser consultado na pagina de [**deployments**](https://github.com/alfmorais/juntos-somos-mais-api/deployments/juntos-somos-mais-api) do github.
 
 ## Autor
 
@@ -172,3 +181,4 @@ Olá, eu sou Alfredo de Morais Neto. Sou desenvolvedor Python e quero fazer part
 - [The Shapely User Manual](https://shapely.readthedocs.io/en/stable/manual.html)
 - [Bounding Box](https://wiki.openstreetmap.org/wiki/Bounding_box)
 - [Basics of Bounding Boxes](https://medium.com/analytics-vidhya/basics-of-bounding-boxes-94e583b5e16c)
+- [Heroku: Cloud Application Platform](https://devcenter.heroku.com/categories/python-support)
