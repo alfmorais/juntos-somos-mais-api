@@ -21,13 +21,10 @@ jobs:
     - name: Install Taskipy
       run: |
         python -m pip install --upgrade pip
-        pip install taskipy
-
-    - name: Build Docker Image
-      run: task build-no-cache
+        task install
 
     - name: Run Unit Tests
-      run: task test-pipeline
+      run: task test-local
 
     - name: Install Heroku
       run: task heroku
@@ -40,14 +37,3 @@ jobs:
         heroku_email: ${{secrets.HEROKU_EMAIL}}
         justlogin: true
     - run: heroku auth:whoami
-
-    - uses: actions/checkout@v1
-    - name: Login to Heroku Container registry
-      env: 
-        HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-      run: heroku container:login 
-
-    - name: Build and push Docker image
-      run: |
-        heroku container:push juntos-somos-mais-api -a juntos-somos-mais-api
-        heroku container:release juntos-somos-mais-api -a juntos-somos-mais-api
