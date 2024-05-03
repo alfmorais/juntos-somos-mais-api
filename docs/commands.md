@@ -12,6 +12,9 @@ Taskipy é uma ferramenta que permite definir e executar tarefas repetitivas em 
 8. [run-without-cache](#run-without-cache)
 9. [run-with-cache](#run-with-cache)
 10. [test](#test)
+11. [build-no-cache](#build-no-cache)
+12. [test-pipeline](#test-pipeline)
+13. [heroku](#heroku)
 
 ## shell
 - **Objetivo**: Acessar o shell interativo do Python.
@@ -26,7 +29,7 @@ Taskipy é uma ferramenta que permite definir e executar tarefas repetitivas em 
 ## remove-pytest-cache
 - **Objetivo**: Remover o diretório `.pytest_cache`.
 - **Comando**: ```rm -rf .pytest_cache```
-- **Atalho**: ```task remove-pytest-cache```
+- **Atalho**: `task remove-pytest-cache`
 
 ## generate-requirements
 - **Objetivo**: Gerar o arquivo `requirements.txt` a partir do Poetry.
@@ -62,3 +65,18 @@ Taskipy é uma ferramenta que permite definir e executar tarefas repetitivas em 
 - **Objetivo**: Executar os testes dentro do Docker.
 - **Comando**: ```docker-compose run api1 pytest -vvv --disable-warnings --cov src```
 - **Atalho**: `task test`
+
+## build-no-cache
+- **Objetivo**: Buildar e rodar o projeto sem usar cache.
+- **Comando**: ```docker-compose --project-name juntos-somos-mais build --no-cache```
+- **Atalho**: `task build-no-cache`
+
+## test-pipeline
+- **Objetivo**: Executar os testes no pipeline do Docker.
+- **Comando**: ```docker-compose -p juntos-somos-mais-api run api1 pytest -vvv --disable-warnings --cov src```
+- **Atalho**: `task test-pipeline`
+
+## heroku
+- **Objetivo**: Instalar o Heroku CLI para uso no Github Actions.
+- **Comando**: ```curl https://cli-assets.heroku.com/install-ubuntu.sh | sh```
+- **Atalho**: `task heroku`
